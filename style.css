@@ -202,7 +202,7 @@ section h2 {
 :is(.header, .footer) {
     padding: 2vh 2vw;
     width: 100%;
-    background-color: var(--text-color);
+    background-color: var(--background-color);
     color: var(--color-green600);
     z-index: 200;
     border-bottom: 2px solid var(--glass-border);
@@ -235,6 +235,7 @@ section h2 {
     gap: 2vw;
     width: max-content;
     overflow: hidden;
+    padding: 1em;
 }
 
 .header__li {
@@ -264,7 +265,7 @@ section h2 {
 }
 
 .header__pin {
-    height: 2em;
+    height: 1.5em;
     display: none;
     transition: all 1s linear;
 }
@@ -565,10 +566,6 @@ section h2 {
 /*//////////////// Projects Section //////////////////////*/
 .projects__container {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 4vh;
 }
 
 .projects__container::before {
@@ -598,6 +595,9 @@ section h2 {
     height: 100%;
     background-color: var(--text-color);
     border-radius: var(--border-radius);
+}
+
+.projects__preview:not(.github) {
     clip-path: polygon(0 16%, 52% 16%, 52% 0, 100% 0, 100% 84%, 48% 84%, 48% 100%, 0 100%)
 }
 
@@ -682,14 +682,13 @@ section h2 {
 .tools__article h2 {
     font-size: 3em;
     margin: 0 2em;
-    color: var(--background-color);
+    color: var(--text-color);
     min-width: max-content;
     transform-origin: center;
 }
 
 .tools__icon {
     position: relative;
-    width: 100%;
     z-index: 0;
     flex: 0 0 10em;
     height: 10em;
@@ -697,11 +696,9 @@ section h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1em;
-    padding: 1em;
     border-radius: var(--border-radius);
-    transition: transform .3s ease;
-    overflow: hidden;
+    transition: transform .3s ease-in;
+    overflow: clip;
 }
 
 .tools__icon::before {
@@ -777,40 +774,7 @@ section h2 {
 
 .tools__icon span {
     font-size: 1em;
-    color: var(--text-color);
-}
-
-.fondo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
-    background-image: url(img/sprite-full.png);
-    background-size: cover;
-
-}
-
-.fondo img {
-    position: absolute;
-    object-fit: cover;
-    bottom: 0;
-}
-
-.fondo img:nth-child(1) {
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-.fondo img:nth-child(2) {
-    z-index: 2;
-}
-
-.fondo img:nth-child(3) {
-    z-index: 3;
+    color: var(--background-color);
 }
 
 /* //////////////// Questions ////////////////////// */
@@ -1126,6 +1090,14 @@ section h2 {
         flex-direction: column-reverse;
     }
 
+    .hero__visual {
+        order: -1;
+    }
+
+    .hero__badge {
+        margin: auto;
+    }
+
     .aboutme__container .aboutme__text:not(.golden--text) {
         position: initial;
         width: 100%;
@@ -1143,6 +1115,10 @@ section h2 {
         position: relative;
         width: 100%;
         opacity: 1;
+    }
+
+    .projects__preview:not(.github) {
+        clip-path: polygon(0 8%, 52% 16%, 52% 0, 100% 0, 100% 84%, 48% 84%, 48% 100%, 0 100%)
     }
 }
 
