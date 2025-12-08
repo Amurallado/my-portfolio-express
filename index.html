@@ -4,164 +4,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio | Full Stack Developer</title>
+    <meta name="description" content="Portfolio de Full Stack Developer especializado en crear experiencias web únicas.">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
-    <header class="header container">
-        <div class="header__burger">
+    <header class="header">
+        <div class="loader">
+            <p class="loader__text"></p>
         </div>
-        <nav class="header__nav">
-            <ul class="header__menu container">
-                <li class="header__li"><a href="#aboutme" class="header__link">About me</a></li>
-                <li class="header__li"><a href="#projects" class="header__link">Projects</a></li>
-                <li class="header__li"><a href="#tools" class="header__link">Tools</a></li>
-                <li class="header__li"><a href="#clients" class="header__link">Colaborations</a></li>
-                <li class="header__li"><a href="#questions" class="header__link">Questions</a></li>
-                <li class="header__li"><a href="#contact" class="header__link">Contacto</a></li>
+        <nav class="header__nav container">
+            <div class="header__burger button button--ghost cta"><svg class="header__pin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                </svg>
+                Ver mapa de misiones</div>
+            <ul class="header__menu collapsed container">
+                <li class="header__li"><a href="#aboutme" class="header__link">Sobre mí</a></li>
+                <li class="header__li"><a href="#projects" class="header__link">Proyectos</a></li>
+                <li class="header__li"><a href="#tools" class="header__link">Herramientas</a></li>
+                <li class="header__li"><a href="#clients" class="header__link">Colaboraciones</a></li>
+                <li class="header__li"><a href="#questions" class="header__link">FAQ</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <section class="hero dark container">
-            <article class="hero__article">
-                <span class="hero__name">Samuel Jaimes</span>
-                <h1 class="hero__h1">Frontend Developer & Automatista</h1>
+        <section class="hero section darkmode" id="hero">
+            <article class="hero__content">
+                <p class="hero__badge">Samuel Jaimes</p>
+                <h1 class="hero__title">Frontend Developer</h1>
+                <p class="hero__description">
+                    Transformo ideas en realidad mediante código limpio y diseño moderno.
+                    Especializado en construir aplicaciones web escalables y visualmente atractivas e <span class="gradient-text">impactantes</span>.
+                </p>
                 <p class="hero__description"><i>No somos nuestro presente, somos lo que podemos llegar a ser.</i></p>
-                <div class="hero__container">
-                    <a href="mailto:luissamija@gmail.com" class="cta">Quiero colaborar contigo</a>
-                    <a href="file:" class="cta">Ver CV</a>
+                <div class="hero__buttons">
+                    <a href="#projects" class="button button--primary cta">
+                        Ver Proyectos <i data-lucide="arrow-right cta"></i>
+                    </a>
+                    <a href="#contact" class="button button--ghost">
+                        Contáctame
+                    </a>
                 </div>
             </article>
-            <article class="hero__article order-1">
-                <img class="hero__mypicture" src="img/minime.png" alt="">
+            <article class="hero__visual">
+                <div class="hero__preview">
+                    <img class="hero__mypicture" src="img/me-frontend.png" alt="">
+                </div>
+                <p class="hero__player">Elige tu héroe:</p>
+                <div class="hero__select container">
+                    <img class="hero__option" src="img/me-frontend.png" alt="Frontend Developer">
+                    <img class="hero__option" src="img/me-backend.png" alt="Backend Developer">
+                    <img class="hero__option" src="img/me-automatista.png" alt="Automatista">
+                    <img class="hero__option" src="img/me-informatico.png" alt="Técnico Informático">
+                </div>
             </article>
         </section>
-        <section class="aboutme">
-            <p class="aboutme__text">Soy un chico creativo que descubrió los videojuegos a muy temprana edad, quedo fascinado con los colores, las formas, los polígonos. Y tras
-                descubrir que había
-                opciones para hacerlo yo mismo. Me embarque en un viaje que a dia de hoy continua, pase por lenguajes como C# y Visual Basic, conocí Python de quien me enamore,
-                pero supe al momento que no estaríamos juntos. Y al final me decidí por llevar mi vida al Desarrollo Web no como ultimo recurso, sino por la simplicidad de apoyar a
-                otros de manera rápida y eficaz.</p>
+        <section class="aboutme darkmode" id="aboutme">
+            <svg class="aboutme__svg">
+                <defs>
+                    <clipPath id="escalonesResponsivos" clipPathUnits="objectBoundingBox">
+                        <path d="M 0 0 
+               L 0.45 0 Q 0.55 0, 0.55 0.1 
+               L 0.55 0.3 
+               L 0.75 0.3 Q 0.85 0.3, 0.85 0.4 
+               L 0.85 0.7 
+               L 0.92 0.7 Q 1 0.7, 1 0.8 
+               L 1 1 
+               L 0.55 1 Q 0.45 1, 0.45 0.9 
+               L 0.45 0.7 
+               L 0.25 0.7 Q 0.15 0.7, 0.15 0.6 
+               L 0.15 0.3 
+               L 0 0.3 Z" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <div class="clipped-splash">
+            </div>
+            <div class="aboutme__container container">
+                <p class="aboutme__text">Soy un chico creativo que descubrió los videojuegos a muy temprana edad, quedo
+                    fascinado con los colores, las formas, los polígonos. Y tras
+                    descubrir que había
+                    opciones para hacerlo yo mismo.
+                <p class="aboutme__text">Me embarque en un viaje que a dia de hoy continua, pase por lenguajes
+                    como C# y Visual Basic, conocí Python de quien me enamore,
+                    pero supe al momento que no estaríamos juntos.</p>
+                <p class="aboutme__text">
+                    Y al final me decidí por llevar mi vida al Desarrollo Web
+                    no como ultimo recurso, sino por la simplicidad de apoyar a
+                    otros de manera rápida y eficaz.
+                </p>
+                <p class="aboutme__text golden--text">"Programar es un arte, que me enamora día a día por el simple
+                    hecho de poder hacerlo en cualquier lugar"</p>
+            </div>
         </section>
-        <section class="projects dark">
-            <h2 class="projects__h2">Últimos lanzamientos</h2>
+        <section class="projects darkmode" id="projects">
+            <h2 class="projects__h2">Últimas Misiones Completadas</h2>
             <div class="projects__container">
-                <article class="projects__card container"><a href="https://colorscss.web.app" target="_blank" rel="noreferrer">
-                        <img src="img/colorscss.png" alt="" class="projects__preview">
-                        <h2 class="projects__title">Colors CSS Dinamycs</h2>
-                        <div class="projects__stack">
-                            <div class="projects__square"></div>
-                            <div class="projects__square"></div>
-                            <div class="projects__square"></div>
-                            <span class="projects__function">Dearrollador</span>
-                        </div>
-                    </a>
+                <h3 class="projects__title projects__title--1">CSS Color Dynamics</h3>
+                <article class="projects__card">
+                    <img src="img/colorscss.png" alt="" class="projects__preview">
+                    <span class="projects__function">Desarrollador</span>
+                    <div class="projects__stack container">
+                        <div class="projects__square">1</div>
+                        <div class="projects__square">2</div>
+                        <div class="projects__square">3</div>
+                    </div>
                 </article>
-                <article class="projects__card container"><a href="https://marketplace.visualstudio.com/items?itemName=Amurallado.css-selector-support" target="_blank"
-                        rel="noreferrer">
-                        <img src="img/cssselectorsupport.png" alt="" class="projects__preview">
-                        <h2 class="projects__title">CSS Selector Support</h2>
-                        <div class="projects__stack">
-                            <div class="projects__square"></div>
-                            <div class="projects__square"></div>
-                            <div class="projects__square"></div>
-                            <span class="projects__function">Fork Developer</span>
-                        </div>
-                    </a>
+                <h3 class="projects__title projects__title--3">CSS Selector Support</h3>
+                <article class="projects__card">
+                    <img src="img/cssselectorsupport.png" alt="" class="projects__preview">
+                    <span class="projects__function">Fork Developer</span>
+                    <div class="projects__stack container">
+                        <div class="projects__square">1</div>
+                        <div class="projects__square">2</div>
+                        <div class="projects__square">3</div>
+                    </div>
                 </article>
-                <article class="projects__card container"><a href="https://destinosmart.web.app" target="_blank" rel="noreferrer">
-                        <img src="img/destinosmart.png" alt="" class="projects__preview">
-                        <h2 class="projects__title">DestinoSmart</h2>
-                        <div class="projects__stack">
-                            <div class="projects__square"></div>
-                            <div class="projects__square"></div>
-                            <div class="projects__square"></div>
-                            <span class="projects__function">Desarrollador</span>
-                        </div>
-                    </a>
+                <h3 class="projects__title projects__title--5">DestinoSmart</h3>
+                <article class="projects__card">
+                    <img src="img/destinosmart.png" alt="" class="projects__preview">
+                    <span class="projects__function">Desarrollador</span>
+                    <div class="projects__stack container">
+                        <div class="projects__square">1</div>
+                        <div class="projects__square">2</div>
+                        <div class="projects__square">3</div>
+                    </div>
                 </article>
-                <article class="projects__card container"><a href="https://github.com/Amurallado" target="_blank" rel="noreferrer">
-                        <img src="https://cdn.prod.website-files.com/5f5a53e153805db840dae2db/64e79ca5aff2fb7295bfddf9_github-que-es.jpg" alt="" class="projects__preview">
-                        <h2 class="projects__title">Ve otros proyectos en mi nuevo Github</h2>
-                    </a>
+            </div>
+            <div class="github">
+                <h3 class="projects__title">4</h3>
+                <article class="projects__card">
+                    <img src="https://cdn.prod.website-files.com/5f5a53e153805db840dae2db/64e79ca5aff2fb7295bfddf9_github-que-es.jpg" alt="" class="projects__preview">
+                    <h2 class="projects__title">Ve otros proyectos en mi nuevo Github</h2>
+                </article>
+            </div>
+
+        </section>
+        <section id="tools" class="tools">
+            <div class="shapedivider">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" color="currentColor">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shapefill"></path>
+                </svg>
+            </div>
+            <!-- <div class="fondo">
+                <img src="img/sprite-montaña.png" alt="">
+                <img src="img/sprite-bosque.png" alt="">
+                <img src="img/sprite-suelo.png" alt="">
+            </div> -->
+            <h2 class="tools__h2">Mi inventario</h2>
+            <article class="tools__article">
+                <h2 class="tools__branch">Development</h2>
+                <div class="tools__icon">
+                    <img src="img/html-icon.png" alt="HTML">
+                    <span>HTML</span>
+                </div>
+                <div class="tools__icon">
+                    <img src="img/css-icon.png" alt="CSS">
+                    <span>CSS</span>
+                </div>
+                <div class="tools__icon">
+                    <img src="img/js-icon.png" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="tools__icon">
+                    <img src="img/typescript-icon.png" alt="TypeScript">
+                    <span>TypeScript</span>
+                </div>
+                <div class="tools__icon">
+                    <img src="img/angular-icon.png" alt="Angular">
+                    <span>Angular</span>
+                </div>
+                <div class="tools__icon">
+                    <img src="img/react-icon.png" alt="React">
+                    <span>React</span>
+                </div>
+                <div class="tools__icon">
+                    <img src="img/php-icon.webp" alt="PHP">
+                    <span>PHP</span>
+                </div>
+                <h2>Tools</h2>
+                <div class="tools__icon">
+                    <img src="img/git-icon.webp" alt="Git">
+                    <span>Git & GitHub</span>
+                </div>
+                <div class="tools__icon">
+                    <img src="img/filezilla-icon.png" alt="FileZilla">
+                    <span>FileZilla</span>
+                </div>
+                <div class="tools__icon">
+                    <img src="img/wordpress-icon.png" alt="WordPress">
+                    <span>WordPress</span>
+                </div>
+                <div class="tools__icon">
+                    <img src="img/docker-icon.png" alt="Docker">
+                    <span>Docker</span>
+                </div>
+                <div class="tools__icon">
+                    <img src="img/n8n-icon.png" alt="n8n">
+                    <span>n8n</span>
+                </div>
+                <div class="tools__icon">
+                    <img src="img/google-cloud-icon.png" alt="Google Cloud">
+                    <span>Google Cloud</span>
+                </div>
+                <div class="tools__icon">
+                    <img src="img/stackblitz-icon.jpg" alt="StackBlitz">
+                    <span>StackBlitz</span>
+                </div>
+                <div class="tools__icon">
+                    <img src="img/penpot-icon.png" alt="PenPot">
+                    <span>PenPot</span>
+                </div>
+                <h2>Database</h2>
+                <div class="tools__icon">
+                    <img src="img/supabase-icon.jpg" alt="Supabase">
+                    <span>Supabase</span>
+                </div>
+                <div class="tools__icon">
+                    <img src="img/qdrant-icon.png" alt="Qdrant">
+                    <span>Qdrant</span>
+                </div>
+                <div class="tools__icon">
+                    <img src="img/firebase-icon.png" alt="Firebase">
+                    <span>Firebase</span>
+                </div>
+            </article>
+        </section>
+        <section class="colaborations darkmode">
+            <h2 class="colaborations__title">Colaboraciones</h2>
+            <article>
+                <div class="colaborations__card">
+                    <h3 class="colaborations__subtitle">TinyLegends - Betatester</h3>
+                    <img src="" alt="" class="colaborationS__img">
+                </div>
+                <div class="colaborations__card locked">
+                    <h3 class="colaborations__subtitle"></h3>
+                    <img src="" alt="" class="colaborationS__img">
+                </div>
+                <div class="colaborations__card locked">
+                    <h3 class="colaborations__subtitle"></h3>
+                    <img src="" alt="" class="colaborationS__img">
+                </div>
+            </article>
+            <div class="colaborations__incoming"><img src="" alt=""><span>Proximamente...</span></div>
+        </section>
+        <section id="questions" class="questions darkmode">
+            <h2 class="questions__title">Preguntas frecuentes</h2>
+            <div class="questions__group container">
+                <article class="questions__acordeon">
+                    <p class="questions__subtitle">¿Tienes disponibilidad inmediata?</p>
+                    <p class="questions__answer questions--hidden">Sí</p>
+                </article>
+                <article class="questions__acordeon">
+                    <p class="questions__subtitle">¿Trabajas en remoto, híbrido o presencial?</p>
+                    <p class="questions__answer questions--hidden">Prefiero modalidad híbrida, pero estoy abierto a
+                        presencial completo.</p>
+                </article>
+                <article class="questions__acordeon">
+                    <p class="questions__subtitle">¿Qué idiomas hablas y en qué nivel?</p>
+                    <p class="questions__answer questions--hidden">Español nativo, inglés profesional, euskera básico.
+                    </p>
+                </article>
+                <article class="questions__acordeon">
+                    <p class="questions__subtitle">¿Trabajas bien en equipo?</p>
+                    <p class="questions__answer questions--hidden">Sí, tengo experiencia colaborando con equipos
+                        multidisciplinarios tanto en remoto como presencial.</p>
                 </article>
             </div>
         </section>
-        <section class="tools dark">
-            <article class="tools__article container">
-                <span class="projects__function"></span>
-                <h2 class="tools__branch">Development</h2>
-                </a>
-                <div class="tools__gallery">
-                    <span><img class="tools__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/250px-HTML5_logo_and_wordmark.svg.png"
-                            alt="">HTML</span>
-                    <span><img class="tools__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Official_CSS_Logo.svg/250px-Official_CSS_Logo.svg.png"
-                            alt="">CSS</span>
-                    <span><img class="tools__img"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/330px-Unofficial_JavaScript_logo_2.svg.png"
-                            alt="">JavaScript</span>
-                    <span><img class="tools__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Angular_gradient.png/250px-Angular_gradient.png"
-                            alt="">Angular</span>
-                    <span><img class="tools__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/250px-React.svg.png" alt="">React</span>
-                    <span><img class="tools__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/250px-PHP-logo.svg.png" alt="">PHP</span>
-                    <span><img class="tools__img" src="" alt="">TypeScript</span>
-                    <span><img class="tools__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/JSON_vector_logo.svg/250px-JSON_vector_logo.svg.png"
-                            alt="">JSON</span>
-            </article>
-            <article class="tools__article container">
-                <h2 class="tools__branch">Database</h2>
-                <div class="tools__gallery"><span class="tools__img"><img src="https://cdn.prod.website-files.com/6088303c28a7c75678aa21d8/6896089af02a14234d22792b_logo1.jpg"
-                            alt="">Supabase</span><span><img class="tools__img" src="https://raw.githubusercontent.com/deepset-ai/haystack-integrations/main/logos/qdrant.png"
-                            alt="">Qdrant</span><span><img
-                            src="https://www.gstatic.com/devrel-devsite/prod/v154b6c17f7870ab2939b3d571919274f806798dc59971188e1f4183601ea7775/firebase/images/touchicon-180.png"
-                            alt="" class="tools__img">Firebase</span></div>
-            </article>
-            <article class="tools__article container">
-                <h2 class="tools__branch">Tools</h2>
-                <div class="tools__gallery">
-                    <span><img class="tools__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
-                            alt="">Wordpress & Playground Wordpress</span>
-                    <span><img class="tools__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/250px-Git-logo.svg.png" alt="">Git & Github</span>
-                    <span><img class="tools__img" src="https://avatars.githubusercontent.com/u/28635252?s=280&v=4" alt="">StackBlitz</span>
-                    <span><img class="tools__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI5Mee0xGXS1WQeVVLpXpCGsPaZ_ZxJNIi5Q&s" alt="">Penpot</span>
-                    <span><img class="tools__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/FileZilla_logo.svg/120px-FileZilla_logo.svg.png"
-                            alt="">FileZilla</span>
-                    <span><img class="tools__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Docker_Logo.png/330px-Docker_Logo.png" alt="">Docker</span>
-                    <span><img class="tools__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCnTnJSYTvuzGDu8eb2qOZpcuTVTygUBm4_Q&s" alt="">n8n</span>
-                    <span><img class="tools__img" src="https://yt3.googleusercontent.com/ytc/AIdro_n94STjDykDksYxhfE4RhM1BT4R2H69tIAHav8jrey03qQ=s900-c-k-c0x00ffffff-no-rj"
-                            alt="">Google Cloud</span>
-                </div>
-            </article>
-        </section>
-        <!-- <section class="colaborations">
-            <div class="colaborations__incoming"><img src="" alt=""><span>Proximamente...</span></div>
-
-        </section>
-        <section class="questions">
-            <article class="questions__group">
-                <div class="question__acordeon">
-                    <h3></h3>
-                    <p></p>
-                </div>
-                <div class="question__acordeon">
-                    <h3></h3>
-                    <p></p>
-                </div>
-                <div class="question__acordeon">
-                    <h3></h3>
-                    <p></p>
-                </div>
-            </article>
-        </section>
-         <section class="contact">
-
-        </section> -->
+        <div class="random__button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                    d="M12 5.25c1.213 0 2.415.046 3.605.135a3.256 3.256 0 0 1 3.01 3.01c.044.583.077 1.17.1 1.759L17.03 8.47a.75.75 0 1 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 0 0-1.06-1.06l-1.752 1.751c-.023-.65-.06-1.296-.108-1.939a4.756 4.756 0 0 0-4.392-4.392 49.422 49.422 0 0 0-7.436 0A4.756 4.756 0 0 0 3.89 8.282c-.017.224-.033.447-.046.672a.75.75 0 1 0 1.497.092c.013-.217.028-.434.044-.651a3.256 3.256 0 0 1 3.01-3.01c1.19-.09 2.392-.135 3.605-.135Zm-6.97 6.22a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l1.752-1.751c.023.65.06 1.296.108 1.939a4.756 4.756 0 0 0 4.392 4.392 49.413 49.413 0 0 0 7.436 0 4.756 4.756 0 0 0 4.392-4.392c.017-.223.032-.447.046-.672a.75.75 0 0 0-1.497-.092c-.013.217-.028.434-.044.651a3.256 3.256 0 0 1-3.01 3.01 47.953 47.953 0 0 1-7.21 0 3.256 3.256 0 0 1-3.01-3.01 47.759 47.759 0 0 1-.1-1.759L6.97 15.53a.75.75 0 0 0 1.06-1.06l-3-3Z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
     </main>
-    <footer class="footer light container">
-        <span>&copy; 2025</span>
+    <footer class="footer container">
+        <span>&copy; 2025 - Amurallado</span>
     </footer>
     <script src="script.js"></script>
 </body>
