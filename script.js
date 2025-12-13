@@ -1,6 +1,6 @@
 // Todas las secciones tienen un diseño aleatorio
 const sections = document.querySelectorAll(".darkmode");
-function desing() {
+function design() {
   const styleRandom = () => {
     return Math.floor(Math.random() * 2);
   };
@@ -50,7 +50,7 @@ lockedSections.forEach((lockedElement) => {
 
 // Random Design Botones
 document.querySelector(".random__button").addEventListener("click", () => {
-  desing();
+  design();
 });
 
 // Burger Menu
@@ -58,4 +58,9 @@ document.querySelector(".header__burger").addEventListener("click", () => {
   document.querySelector(".header__menu").classList.toggle("collapsed");
 });
 
-desing();
+// Menu Links collapse Parent
+document.querySelectorAll(".header__link").forEach((menulink) => {
+  menulink.addEventListener("click", () => {
+    document.querySelector(".header__menu").classList.toggle("collapsed");
+  });
+});
