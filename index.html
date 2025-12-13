@@ -15,9 +15,9 @@
 
 <body>
     <header class="header">
-        <!-- <div class="loader">
-            <p class="loader__text"></p>
-        </div> -->
+        <div class="loader">
+            <p class="loader__text">Cargando<br></p>
+        </div>
         <nav class="header__nav container">
             <div class="header__burger button button--ghost cta"><svg class="header__pin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor">
@@ -41,15 +41,14 @@
                 <h1 class="hero__title">Frontend Developer</h1>
                 <p class="hero__description">
                     Transformo ideas en realidad mediante código limpio y diseño moderno.
-                    Especializado en construir aplicaciones web escalables y visualmente atractivas e <span class="gradient-text">impactantes</span>.
-                </p>
+                    Especializado en construir aplicaciones web escalables y visualmente atractivas e <span class="gradient-text">impactantes.</span></p>
                 <p class="hero__description"><i>No somos nuestro presente, somos lo que podemos llegar a ser.</i></p>
                 <div class="hero__buttons">
                     <a href="#projects" class="button button--primary cta">
                         Ver Proyectos <i data-lucide="arrow-right cta"></i>
                     </a>
                     <a href="#contact" class="button button--ghost">
-                        Contáctame
+                        Curriculum
                     </a>
                 </div>
             </article>
@@ -57,7 +56,7 @@
                 <div class="hero__preview">
                     <img class="hero__mypicture" src="img/me-frontend.png" alt="">
                 </div>
-                <p class="hero__player">Elige tu héroe:</p>
+                <p class="hero__choice">Elige tu héroe:</p>
                 <div class="hero__select container">
                     <img class="hero__option" src="img/me-frontend.png" alt="Frontend Developer">
                     <img class="hero__option" src="img/me-backend.png" alt="Backend Developer">
@@ -87,60 +86,61 @@
             </svg>
             <div class="clipped-splash">
             </div>
-            <div class="aboutme__container container">
-                <p class="aboutme__text">Soy un chico creativo que descubrió los videojuegos a muy temprana edad, quedo
-                    fascinado con los colores, las formas, los polígonos. Y tras
-                    descubrir que había
-                    opciones para hacerlo yo mismo.
-                <p class="aboutme__text">Me embarque en un viaje que a dia de hoy continua, pase por lenguajes
+            <ol class="aboutme__container container">
+                <li class="aboutme__text">Soy un chico creativo que descubrió los videojuegos a muy temprana edad, quedo
+                    fascinado con los colores, las formas, los polígonos. Y tras descubrir que había opciones para hacerlo yo mismo.</li>
+                <li class="aboutme__text">Me embarque en un viaje que a dia de hoy continua, pase por lenguajes
                     como C# y Visual Basic, conocí Python de quien me enamore,
-                    pero supe al momento que no estaríamos juntos.</p>
-                <p class="aboutme__text">
+                    pero supe al momento que no estaríamos juntos.</li>
+                <li class="aboutme__text">
                     Y al final me decidí por llevar mi vida al Desarrollo Web
                     no como ultimo recurso, sino por la simplicidad de apoyar a
-                    otros de manera rápida y eficaz.
-                </p>
+                    otros de manera rápida y eficaz.</li>
                 <p class="aboutme__text golden--text">"Programar es un arte, que me enamora día a día por el simple
                     hecho de poder hacerlo en cualquier lugar"</p>
-            </div>
+            </ol>
         </section>
         <section class="projects darkmode" id="projects">
             <h2 class="projects__h2">Últimas Misiones Completadas</h2>
             <div class="projects__container">
                 <h3 class="projects__title projects__title--1">CSS Color Dynamics</h3>
                 <article class="projects__card">
-                    <img src="img/colorscss.png" alt="" class="projects__preview">
                     <span class="projects__function">Desarrollador</span>
+                    <div class="projects__preview">
+                        <img src="img/colorscss.png" alt="" class="projects__preview">
+                    </div>
                     <div class="projects__stack container">
-                        <div class="projects__square">1</div>
-                        <div class="projects__square">2</div>
-                        <div class="projects__square">3</div>
+                        <img class="projects__square" src="img/html-icon.png" alt="">
+                        <img class="projects__square" src="img/css-icon.png" alt="">
+                        <img class="projects__square" src="img/js-icon.png" alt="">
                     </div>
                 </article>
                 <h3 class="projects__title projects__title--3">CSS Selector Support</h3>
                 <article class="projects__card">
-                    <img src="img/cssselectorsupport.png" alt="" class="projects__preview">
                     <span class="projects__function">Fork Developer</span>
+                    <div class="projects__preview">
+                        <img src="img/cssselectorsupport.png" alt="" class="projects__preview">
+                    </div>
                     <div class="projects__stack container">
-                        <div class="projects__square">1</div>
-                        <div class="projects__square">2</div>
-                        <div class="projects__square">3</div>
+                        <img class="projects__square" src="img/typescript-icon.png" alt="">
                     </div>
                 </article>
                 <h3 class="projects__title projects__title--5">DestinoSmart</h3>
                 <article class="projects__card">
-                    <img src="img/destinosmart.png" alt="" class="projects__preview">
                     <span class="projects__function">Desarrollador</span>
+                    <div class="projects__preview">
+                        <img src="img/destinosmart.png" alt="" class="projects__preview">
+                    </div>
                     <div class="projects__stack container">
-                        <div class="projects__square">1</div>
-                        <div class="projects__square">2</div>
-                        <div class="projects__square">3</div>
+                        <img class="projects__square" src="img/react-icon.png" alt="">
+                        <img class="projects__square" src="img/supabase-icon.jpg" alt="">
                     </div>
                 </article>
                 <h3 class="projects__title">Mi GitHub</h3>
-                <article class="projects__card">
-                    <img src="https://cdn.prod.website-files.com/5f5a53e153805db840dae2db/64e79ca5aff2fb7295bfddf9_github-que-es.jpg" alt="" class="projects__preview github">
-                    <span class="projects__function">Ve otros proyectos en mi nuevo Github</span>
+                <article class="projects__card"">
+                    <span class=" projects__function">¡En exclusiva! El código de este portfolio</span>
+                    <img src=" https://cdn.prod.website-files.com/5f5a53e153805db840dae2db/64e79ca5aff2fb7295bfddf9_github-que-es.jpg" alt="" class="projects__preview github">
+                    <span class="projects__stack">Ve otros proyectos en mi nuevo Github</span>
                 </article>
             </div>
             </div>
@@ -157,7 +157,7 @@
             </div>
             <h2 class="tools__h2">Mi inventario</h2>
             <article class="tools__article">
-                <h2 class="tools__branch">Development</h2>
+                <h3 class="tools__branch">Development</h3>
                 <div class="tools__icon">
                     <img src="img/html-icon.png" alt="HTML">
                     <span>HTML</span>
@@ -186,7 +186,7 @@
                     <img src="img/php-icon.webp" alt="PHP">
                     <span>PHP</span>
                 </div>
-                <h2>Tools</h2>
+                <h3 class="tools__branch">Tools</h3>
                 <div class="tools__icon">
                     <img src="img/git-icon.webp" alt="Git">
                     <span>Git & GitHub</span>
@@ -219,7 +219,7 @@
                     <img src="img/penpot-icon.png" alt="PenPot">
                     <span>PenPot</span>
                 </div>
-                <h2>Database</h2>
+                <h3 class="tools__branch">Database</h3>
                 <div class="tools__icon">
                     <img src="img/supabase-icon.jpg" alt="Supabase">
                     <span>Supabase</span>
@@ -234,23 +234,23 @@
                 </div>
             </article>
         </section>
-        <section class="colaborations darkmode">
-            <h2 class="colaborations__title">Colaboraciones</h2>
-            <article>
-                <div class="colaborations__card">
-                    <h3 class="colaborations__subtitle">TinyLegends - Betatester</h3>
-                    <img src="" alt="" class="colaborationS__img">
-                </div>
-                <div class="colaborations__card locked">
-                    <h3 class="colaborations__subtitle"></h3>
-                    <img src="" alt="" class="colaborationS__img">
-                </div>
-                <div class="colaborations__card locked">
-                    <h3 class="colaborations__subtitle"></h3>
-                    <img src="" alt="" class="colaborationS__img">
-                </div>
-            </article>
-            <div class="colaborations__incoming"><img src="" alt=""><span>Proximamente...</span></div>
+        <section class="collaborations darkmode locked">
+            <h2 class="collaborations__title">Colaboraciones</h2>
+            <div class="collaborations__container">
+                <article class="collaborations__card">
+                    <h3 class="collaborations__subtitle">TinyLegends - Beta Tester</h3>
+                    <img src="" alt="" class="collaborations__img">
+                </article>
+                <article class="collaborations__card">
+                    <h3 class="collaborations__subtitle"></h3>
+                    <img src="" alt="" class="collaborations__img">
+                </article>
+                <article class="collaborations__card">
+                    <h3 class="collaborations__subtitle"></h3>
+                    <img src="" alt="" class="collaborations__img">
+                </article>
+            </div>
+            <div class="collaborations__incoming"><img src="" alt=""><span>Próximamente...</span></div>
         </section>
         <section id="questions" class="questions darkmode">
             <h2 class="questions__title">Preguntas frecuentes</h2>
