@@ -1,15 +1,8 @@
 // Todas las secciones tienen un diseño aleatorio
-const sections = document.querySelectorAll(".darkmode");
-function design() {
-  const styleRandom = () => {
-    return Math.floor(Math.random() * 2);
-  };
-  sections.forEach((section) => {
-    if (styleRandom() === 1) {
-      section.classList.toggle("darkmode");
-    }
-  });
-}
+const modeLight = document.querySelector(".random__button");
+modeLight.addEventListener("click", () =>
+  document.querySelector("#darkmode").classList.toggle("darkmode")
+);
 
 // Cambia la foto del persona y su trabajo
 const playeroptions = document.querySelectorAll(".hero__option");
@@ -48,11 +41,6 @@ lockedSections.forEach((lockedElement) => {
   });
 });
 
-// Random Design Botones
-document.querySelector(".random__button").addEventListener("click", () => {
-  design();
-});
-
 // Burger Menu
 document.querySelector(".header__burger").addEventListener("click", () => {
   document.querySelector(".header__menu").classList.toggle("collapsed");
@@ -64,3 +52,19 @@ document.querySelectorAll(".header__link").forEach((menulink) => {
     document.querySelector(".header__menu").classList.toggle("collapsed");
   });
 });
+
+// Random Design Botones
+// document.querySelector(".random__button").addEventListener("click", () => {
+//   design();
+// });
+// const modeLight = document.querySelector(".darkmode");
+// function design() {
+//   const styleRandom = () => {
+//     return Math.floor(Math.random() * 2);
+//   };
+//   sections.forEach((section) => {
+//     if (styleRandom() === 1) {
+//       section.classList.toggle("darkmode");
+//     }
+//   });
+// }
