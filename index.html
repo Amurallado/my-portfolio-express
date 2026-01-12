@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel Jaimes | Web Designer for Brands & SaaS</title>
-    <meta name="description" content="Samuel Jaimes - Web Designer specializing in small brands, e-commerce, and SaaS products. Transform logic into memorable experiences.">
-    <meta name="keywords" content="Web Designer, UI/UX Designer, E-commerce Design, SaaS Design, Brand Designer, Freelance Designer">
+    <title>Samuel Jaimes | Diseñador Web para Marcas & SaaS</title>
+    <meta name="description"
+        content="Samuel Jaimes - Diseñador Web especializado en pequeñas marcas, e-commerce y productos SaaS. Transformo la lógica en experiencias memorables.">
+    <meta name="keywords"
+        content="Diseñador Web, Diseñador UI/UX, Diseño E-commerce, Diseño SaaS, Diseñador de Marca, Diseñador Freelance">
     <meta name="author" content="Samuel Jaimes">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,29 +16,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body id="darkmode" class="darkmode">
+<body id="darkmode" class="body--darkmode">
     <!-- Loading Screen -->
     <div class="loader">
-        <p class="loader__text">System starting</p>
+        <p class="loader__text">Iniciando sistema</p>
     </div>
 
     <!-- Navigation Header -->
     <header class="header">
         <nav class="header__nav">
             <button class="header__burger">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="3" y1="12" x2="21" y2="12"></line>
                     <line x1="3" y1="6" x2="21" y2="6"></line>
                     <line x1="3" y1="18" x2="21" y2="18"></line>
                 </svg>
                 <span>Menú</span>
             </button>
-            <ul class="header__menu collapsed">
-                <li class="header__li"><a href="#aboutme" class="header__link">Sobre mí</a></li>
-                <li class="header__li"><a href="#projects" class="header__link">Proyectos</a></li>
-                <li class="header__li"><a href="#tools" class="header__link">Herramientas</a></li>
-                <li class="header__li"><a href="#questions" class="header__link">FAQ</a></li>
+            <ul class="header__menu header__menu--collapsed">
+                <li class="header__item"><a href="#aboutme" class="header__link">Sobre mí</a></li>
+                <li class="header__item"><a href="#projects" class="header__link">Proyectos</a></li>
+                <li class="header__item"><a href="#tools" class="header__link">Herramientas</a></li>
+                <li class="header__item"><a href="#questions" class="header__link">FAQ</a></li>
             </ul>
         </nav>
     </header>
@@ -44,36 +46,40 @@
     <main class="main">
         <!-- Hero Section -->
         <section class="hero" id="hero">
-            <div class="window-aero">
+            <div class="window">
                 <!-- Window Title Bar -->
-                <div class="window-titlebar">
-                    <div class="window-titlebar__left">
-                        <span class="window-titlebar__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
+                <div class="window__titlebar">
+                    <div class="window__titlebar-left">
+                        <span class="window__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
                                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                 <circle cx="12" cy="7" r="4"></circle>
                             </svg>
                         </span>
-                        <span class="window-titlebar__title">
-                            <span>Welcome.exe</span>
+                        <span class="window__title">
+                            <span>Bienvenida.exe</span>
                             <span style="color: var(--text-muted);">—</span>
-                            <span style="color: var(--text-secondary);">Developer Portfolio</span>
+                            <span style="color: var(--text-secondary);">Portfolio de Desarrollador</span>
                         </span>
                     </div>
-                    <div class="window-controls">
-                        <button class="window-btn window-btn--minimize" aria-label="Minimize">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <div class="window__controls">
+                        <button class="window__btn window__btn--minimize" aria-label="Minimize">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M5 12h14"></path>
                             </svg>
                         </button>
-                        <button class="window-btn window-btn--maximize" aria-label="Maximize">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <button class="window__btn window__btn--maximize" aria-label="Maximize">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <rect x="3" y="3" width="18" height="18" rx="2"></rect>
                             </svg>
                         </button>
-                        <button class="window-btn window-btn--close" aria-label="Close">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <button class="window__btn window__btn--close" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M18 6L6 18M6 6l12 12"></path>
                             </svg>
                         </button>
@@ -81,42 +87,47 @@
                 </div>
 
                 <!-- Window Content -->
-                <div class="window-content">
+                <div class="window__content">
                     <article class="hero__content">
-                        <p class="hero__badge">Samuel Jaimes • Ready for Projects</p>
-                        <h1 class="hero__title">Web Designer</h1>
+                        <p class="hero__badge">Samuel Jaimes • Disponible para Proyectos</p>
+                        <h1 class="hero__title">Desarrollador Frontend</h1>
                         <p class="hero__description">
-                            I design digital experiences that help <span class="gradient-text">small brands, e-commerce
-                                stores, and SaaS products</span> connect with their audience.
-                            I transform complex logic into memorable, high-converting experiences.
+                            Diseño experiencias digitales que ayudan a <span class="hero__gradient-text">pequeñas
+                                marcas, tiendas
+                                e-commerce y productos SaaS</span> a conectar con su audiencia.
+                            Transformo lógica compleja en experiencias memorables y de alta conversión.
                         </p>
                         <p class="hero__description">
-                            <i>"Good design isn't just how it looks—it's how it works for your business."</i>
+                            <i>"El buen diseño no es solo cómo se ve—es cómo funciona para tu negocio."</i>
                         </p>
                         <div class="hero__buttons">
                             <a href="#projects" class="btn btn--primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
                                     </path>
                                 </svg>
                                 Ver Proyectos
                             </a>
                             <a href="public/informatica.pdf" class="btn btn--secondary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                     <polyline points="7 10 12 15 17 10"></polyline>
                                     <line x1="12" y1="15" x2="12" y2="3"></line>
                                 </svg>
-                                Curriculum
+                                Currículum
                             </a>
                         </div>
                     </article>
                     <article class="hero__visual">
-                        <img class="hero__mypicture" src="img/me-frontend.png" alt="Samuel Jaimes - Frontend Developer">
-                        <p class="hero__p">Elige tu héroe:</p>
-                        <div class="hero__select">
-                            <img class="hero__option" src="img/me-frontend.png" alt="Frontend Developer">
-                            <img class="hero__option" src="img/me-backend.png" alt="Backend Developer">
+                        <img class="hero__picture" src="img/me-frontend.png"
+                            alt="Samuel Jaimes - Desarrollador Frontend">
+                        <p class="hero__label">Elige tu héroe:</p>
+                        <div class="hero__selector">
+                            <img class="hero__option" src="img/me-frontend.png" alt="Desarrollador Frontend">
+                            <img class="hero__option" src="img/me-backend.png" alt="Desarrollador Backend">
                             <img class="hero__option" src="img/me-automatista.png" alt="Automatista">
                             <img class="hero__option" src="img/me-informatico.png" alt="Técnico Informático">
                         </div>
@@ -127,32 +138,36 @@
 
         <!-- About Me Section -->
         <section class="aboutme" id="aboutme">
-            <div class="window-aero">
+            <div class="window">
                 <!-- Window Title Bar -->
-                <div class="window-titlebar">
-                    <div class="window-titlebar__left">
-                        <span class="window-titlebar__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="window__titlebar">
+                    <div class="window__titlebar-left">
+                        <span class="window__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="M12 16v-4"></path>
                                 <path d="M12 8h.01"></path>
                             </svg>
                         </span>
-                        <span class="window-titlebar__title">About.exe — Mi Historia</span>
+                        <span class="window__title">About.exe — Mi Historia</span>
                     </div>
-                    <div class="window-controls">
-                        <button class="window-btn window-btn--minimize" aria-label="Minimize">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <div class="window__controls">
+                        <button class="window__btn window__btn--minimize" aria-label="Minimize">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M5 12h14"></path>
                             </svg>
                         </button>
-                        <button class="window-btn window-btn--maximize" aria-label="Maximize">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <button class="window__btn window__btn--maximize" aria-label="Maximize">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <rect x="3" y="3" width="18" height="18" rx="2"></rect>
                             </svg>
                         </button>
-                        <button class="window-btn window-btn--close" aria-label="Close">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <button class="window__btn window__btn--close" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M18 6L6 18M6 6l12 12"></path>
                             </svg>
                         </button>
@@ -160,29 +175,31 @@
                 </div>
 
                 <!-- Window Content -->
-                <div class="window-content">
+                <div class="window__content">
                     <ol class="aboutme__list">
-                        <li class="aboutme__item">
+                        <li class="aboutme__item locked">
                             <span class="aboutme__number">01</span>
-                            <p class="aboutme__text-retro">Growing up inspired by how digital products *feel*, I became
-                                obsessed with understanding what makes people click, scroll, and convert. Design is more
-                                than aesthetics—it's communication.</p>
+                            <p class="aboutme__text">Creciendo inspirado por cómo *se sienten* los productos digitales,
+                                me obsesioné
+                                con entender qué hace que las personas hagan clic, se desplacen y conviertan. El diseño
+                                es más
+                                que estética—es comunicación.</p>
                         </li>
                         <li class="aboutme__item">
                             <span class="aboutme__number">02</span>
-                            <p class="aboutme__text-retro">I specialize in designing for small brands finding their
-                                voice, e-commerce stores that need to sell, and SaaS products that must simplify
-                                complexity. Every pixel serves a purpose.</p>
+                            <p class="aboutme__text">Me especializo en diseñar para pequeñas marcas que buscan su
+                                voz, tiendas e-commerce que necesitan vender, y productos SaaS que deben simplificar
+                                la complejidad. Cada píxel tiene un propósito.</p>
                         </li>
                         <li class="aboutme__item">
                             <span class="aboutme__number">03</span>
-                            <p class="aboutme__text-retro">My approach is Strategic Empathy. I dive deep into
-                                understanding your audience, your goals, and then bridge the gap with design that
-                                doesn't just look beautiful—it performs.</p>
+                            <p class="aboutme__text">Mi enfoque es la Empatía Estratégica. Me sumerjo profundamente en
+                                comprender a tu audiencia, tus objetivos, y luego cierro la brecha con diseño que
+                                no solo se ve hermoso—funciona.</p>
                         </li>
                     </ol>
                     <div class="aboutme__quote">
-                        <p class="aboutme__quote-text">"Design is my craft. Your growth is my mission."</p>
+                        <p class="aboutme__quote-text">"El diseño es mi oficio. Tu crecimiento es mi misión."</p>
                     </div>
                 </div>
             </div>
@@ -190,31 +207,35 @@
 
         <!-- Projects Section -->
         <section class="projects" id="projects">
-            <div class="window-aero">
+            <div class="window">
                 <!-- Window Title Bar -->
-                <div class="window-titlebar">
-                    <div class="window-titlebar__left">
-                        <span class="window-titlebar__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="window__titlebar">
+                    <div class="window__titlebar-left">
+                        <span class="window__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
                                 </path>
                             </svg>
                         </span>
-                        <span class="window-titlebar__title">C:\My_Projects\</span>
+                        <span class="window__title">C:\My_Projects\</span>
                     </div>
-                    <div class="window-controls">
-                        <button class="window-btn window-btn--minimize" aria-label="Minimize">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <div class="window__controls">
+                        <button class="window__btn window__btn--minimize" aria-label="Minimize">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M5 12h14"></path>
                             </svg>
                         </button>
-                        <button class="window-btn window-btn--maximize" aria-label="Maximize">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <button class="window__btn window__btn--maximize" aria-label="Maximize">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <rect x="3" y="3" width="18" height="18" rx="2"></rect>
                             </svg>
                         </button>
-                        <button class="window-btn window-btn--close" aria-label="Close">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <button class="window__btn window__btn--close" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M18 6L6 18M6 6l12 12"></path>
                             </svg>
                         </button>
@@ -222,113 +243,124 @@
                 </div>
 
                 <!-- Window Content -->
-                <div class="window-content">
-                    <h2 class="projects__h2">Strategic Missions & Case Studies</h2>
+                <div class="window__content">
+                    <h2 class="projects__title">Misiones Estratégicas y Casos de Estudio</h2>
                     <div class="projects__grid">
                         <!-- Project 1: CSS Color Dynamics -->
-                        <article class="project-card">
-                            <div class="project-card__header">
-                                <span class="project-card__icon">🎨</span>
-                                <span class="project-card__title">Mission: Color Precision</span>
+                        <article class="project">
+                            <div class="project__header">
+                                <span class="project__icon">🎨</span>
+                                <span class="project__title">Misión: Precisión de Color</span>
                             </div>
-                            <div class="project-card__preview">
-                                <img src="img/colorscss.png" alt="CSS Color Dynamics Preview">
+                            <div class="project__preview">
+                                <img src="img/colorscss.png" alt="Vista previa de CSS Color Dynamics">
                             </div>
-                            <div class="project-card__footer">
-                                <span class="project-card__role">Lead Designer & Developer</span>
-                                <div class="project-card__tech">
-                                    <span class="tech-tag">UI/UX</span>
-                                    <span class="tech-tag">Color Theory</span>
-                                    <span class="tech-tag">Tooling</span>
+                            <div class="project__footer">
+                                <span class="project__role">Diseñador y Desarrollador Principal</span>
+                                <div class="project__tech">
+                                    <span class="project__tag">UI/UX</span>
+                                    <span class="project__tag">Teoría del Color</span>
+                                    <span class="project__tag">Herramientas</span>
                                 </div>
-                                <div class="project-card__mission-log">
-                                    <p><strong>Context:</strong> A tool for designers demanding mathematical precision
-                                        in monochrome palettes.</p>
-                                    <p><strong>Problem:</strong> Lack of lightweight tools that generate accurate
-                                        palettes without cognitive fatigue.</p>
-                                    <p><strong>Decision:</strong> "Less is more" UI based on HSL color theory and
-                                        instant manipulation.</p>
-                                    <p><strong>Result:</strong> Instant visual consistency and streamlined design-to-dev
-                                        handoff.</p>
+                                <div class="project__log">
+                                    <p><strong>Contexto:</strong> Una herramienta para diseñadores que exigen precisión
+                                        matemática
+                                        en paletas monocromáticas.</p>
+                                    <p><strong>Problema:</strong> Falta de herramientas ligeras que generen paletas
+                                        precisas
+                                        sin fatiga cognitiva.</p>
+                                    <p><strong>Decisión:</strong> UI "Menos es más" basada en teoría de color HSL y
+                                        manipulación instantánea.</p>
+                                    <p><strong>Resultado:</strong> Consistencia visual instantánea y traspaso
+                                        simplificado de diseño a desarrollo.</p>
                                 </div>
-                                <a href="https://colorscss.web.app" target="_blank" class="btn btn--secondary btn--sm">Run Application</a>
+                                <a href="https://colorscss.web.app" target="_blank"
+                                    class="btn btn--secondary btn--small">Ejecutar Aplicación</a>
                             </div>
                         </article>
 
                         <!-- Project 2: CSS Selector Support -->
-                        <article class="project-card">
-                            <div class="project-card__header">
-                                <span class="project-card__icon">📦</span>
-                                <span class="project-card__title">Mission: DX Optimization</span>
+                        <article class="project">
+                            <div class="project__header">
+                                <span class="project__icon">📦</span>
+                                <span class="project__title">Misión: Optimización DX</span>
                             </div>
-                            <div class="project-card__preview">
-                                <img src="img/cssselectorsupport.png" alt="CSS Selector Support Preview">
+                            <div class="project__preview">
+                                <img src="img/cssselectorsupport.png" alt="Vista previa de CSS Selector Support">
                             </div>
-                            <div class="project-card__footer">
-                                <span class="project-card__role">DX Designer</span>
-                                <div class="project-card__tech">
-                                    <span class="tech-tag">DX Design</span>
-                                    <span class="tech-tag">Productivity</span>
-                                    <span class="tech-tag">VS Code</span>
+                            <div class="project__footer">
+                                <span class="project__role">Diseñador DX</span>
+                                <div class="project__tech">
+                                    <span class="project__tag">Diseño DX</span>
+                                    <span class="project__tag">Productividad</span>
+                                    <span class="project__tag">VS Code</span>
                                 </div>
-                                <div class="project-card__mission-log">
-                                    <p><strong>Context:</strong> Constant context switching between HTML/CSS slowing
-                                        down productivity.</p>
-                                    <p><strong>Problem:</strong> Fragmented workflow during high-fidelity layout
-                                        development.</p>
-                                    <p><strong>Decision:</strong> Minimalist, native-feeling autocomplete engine that
-                                        respects the dev's flow.</p>
-                                    <p><strong>Result:</strong> Workflow optimizer used by frontend teams to eliminate
-                                        friction.</p>
+                                <div class="project__log">
+                                    <p><strong>Contexto:</strong> El cambio constante de contexto entre HTML/CSS
+                                        ralentiza
+                                        la productividad.</p>
+                                    <p><strong>Problema:</strong> Flujo de trabajo fragmentado durante el desarrollo
+                                        de diseños de alta fidelidad.</p>
+                                    <p><strong>Decisión:</strong> Motor de autocompletado minimalista y nativo que
+                                        respeta el flujo del desarrollador.</p>
+                                    <p><strong>Resultado:</strong> Optimizador de flujo de trabajo usado por equipos
+                                        frontend para eliminar
+                                        fricciones.</p>
                                 </div>
-                                <a href="https://marketplace.visualstudio.com/items?itemName=Amurallado.css-selector-support" target="_blank"
-                                    class="btn btn--secondary btn--sm">View Deployment</a>
+                                <a href="https://marketplace.visualstudio.com/items?itemName=Amurallado.css-selector-support"
+                                    target="_blank" class="btn btn--secondary btn--small">Ver Despliegue</a>
                             </div>
                         </article>
 
                         <!-- Project 3: DestinoSmart -->
-                        <article class="project-card">
-                            <div class="project-card__header">
-                                <span class="project-card__icon">🌐</span>
-                                <span class="project-card__title">Mission: Data Translation</span>
+                        <article class="project">
+                            <div class="project__header">
+                                <span class="project__icon">🌐</span>
+                                <span class="project__title">Misión: Traducción de Datos</span>
                             </div>
-                            <div class="project-card__preview">
-                                <img src="img/destinosmart.png" alt="DestinoSmart Preview">
+                            <div class="project__preview">
+                                <img src="img/destinosmart.png" alt="Vista previa de DestinoSmart">
                             </div>
-                            <div class="project-card__footer">
-                                <span class="project-card__role">UX/UI Designer & Developer</span>
-                                <div class="project-card__tech">
-                                    <span class="tech-tag">SaaS Design</span>
-                                    <span class="tech-tag">User Flow</span>
-                                    <span class="tech-tag">Angular</span>
+                            <div class="project__footer">
+                                <span class="project__role">Diseñador UX/UI y Desarrollador</span>
+                                <div class="project__tech">
+                                    <span class="project__tag">Diseño SaaS</span>
+                                    <span class="project__tag">Flujo de Usuario</span>
+                                    <span class="project__tag">Angular</span>
                                 </div>
-                                <div class="project-card__mission-log">
-                                    <p><strong>Context:</strong> Travel SaaS platform requiring centralization of urban
-                                        and trip data.</p>
-                                    <p><strong>Problem:</strong> Overwhelming information leading to decision paralysis
-                                        for users.</p>
-                                    <p><strong>Decision:</strong> Independent widget hierarchy and strategic whitespace
-                                        to reduce fatigue.</p>
-                                    <p><strong>Result:</strong> Robust platform where complex data is transformed into
-                                        decisions.</p>
+                                <div class="project__log">
+                                    <p><strong>Contexto:</strong> Plataforma SaaS de viajes que requiere centralización
+                                        de datos
+                                        urbanos y de viaje.</p>
+                                    <p><strong>Problema:</strong> Información abrumadora que lleva a parálisis de
+                                        decisión
+                                        para los usuarios.</p>
+                                    <p><strong>Decisión:</strong> Jerarquía de widgets independientes y espacio en
+                                        blanco estratégico
+                                        para reducir la fatiga.</p>
+                                    <p><strong>Resultado:</strong> Plataforma robusta donde los datos complejos se
+                                        transforman en
+                                        decisiones.</p>
                                 </div>
-                                <a href="https://destinosmart.web.app" target="_blank" class="btn btn--secondary btn--sm">Access Platform</a>
+                                <a href="https://destinosmart.web.app" target="_blank"
+                                    class="btn btn--secondary btn--small">Acceder a la Plataforma</a>
                             </div>
                         </article>
 
                         <!-- Project 4 -->
-                        <a href="https://github.com/Amurallado" class="project-card" target="_blank" rel="noopener">
-                            <div class="project-card__header">
-                                <span class="project-card__icon">💻</span>
-                                <span class="project-card__title">Mi GitHub</span>
+                        <a href="https://github.com/Amurallado" class="project" target="_blank" rel="noopener">
+                            <div class="project__header">
+                                <span class="project__icon">💻</span>
+                                <span class="project__title">Mi GitHub</span>
                             </div>
-                            <div class="project-card__preview">
-                                <img src="https://cdn.prod.website-files.com/5f5a53e153805db840dae2db/64e79ca5aff2fb7295bfddf9_github-que-es.jpg" alt="GitHub Profile">
+                            <div class="project__preview">
+                                <img src="https://cdn.prod.website-files.com/5f5a53e153805db840dae2db/64e79ca5aff2fb7295bfddf9_github-que-es.jpg"
+                                    alt="Perfil de GitHub">
                             </div>
-                            <div class="project-card__footer">
-                                <span class="project-card__role">¡Código de este portfolio!</span>
-                                <div class="project-card__tech">
-                                    <span class="tech-tag">Open Source</span>
+                            <div class="project__footer">
+                                <span class="project__role">¡Código de este portfolio!</span>
+                                <div class="project__tech">
+                                    <span class="project__tag">Código Abierto</span>
                                 </div>
                             </div>
                         </a>
@@ -339,32 +371,36 @@
 
         <!-- Tools Section -->
         <section id="tools" class="tools">
-            <div class="window-aero">
+            <div class="window">
                 <!-- Window Title Bar -->
-                <div class="window-titlebar">
-                    <div class="window-titlebar__left">
-                        <span class="window-titlebar__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="window__titlebar">
+                    <div class="window__titlebar-left">
+                        <span class="window__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <path
                                     d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
                                 </path>
                             </svg>
                         </span>
-                        <span class="window-titlebar__title">Inventory.exe — Mi Stack Tecnológico</span>
+                        <span class="window__title">Inventory.exe — Mi Stack Tecnológico</span>
                     </div>
-                    <div class="window-controls">
-                        <button class="window-btn window-btn--minimize" aria-label="Minimize">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <div class="window__controls">
+                        <button class="window__btn window__btn--minimize" aria-label="Minimize">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M5 12h14"></path>
                             </svg>
                         </button>
-                        <button class="window-btn window-btn--maximize" aria-label="Maximize">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <button class="window__btn window__btn--maximize" aria-label="Maximize">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <rect x="3" y="3" width="18" height="18" rx="2"></rect>
                             </svg>
                         </button>
-                        <button class="window-btn window-btn--close" aria-label="Close">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <button class="window__btn window__btn--close" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M18 6L6 18M6 6l12 12"></path>
                             </svg>
                         </button>
@@ -372,117 +408,117 @@
                 </div>
 
                 <!-- Window Content -->
-                <div class="window-content" style="padding: 20px; overflow: hidden;">
-                    <div class="tools__carousel-container">
-                        <article class="tools__article">
+                <div class="window__content" style="padding: 20px; overflow: hidden;">
+                    <div class="tools__carousel">
+                        <article class="tools__list">
                             <!-- Development -->
-                            <h3 class="tools__branch">Development</h3>
-                            <div class="tools__icon">
+                            <h3 class="tools__category">Desarrollo</h3>
+                            <div class="tools__item">
                                 <img src="img/html-icon.png" alt="HTML">
                                 <span>HTML</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/css-icon.png" alt="CSS">
                                 <span>CSS</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/js-icon.png" alt="JavaScript">
                                 <span>JavaScript</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/typescript-icon.png" alt="TypeScript">
                                 <span>TypeScript</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/angular-icon.png" alt="Angular">
                                 <span>Angular</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/react-icon.png" alt="React">
                                 <span>React</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/php-icon.webp" alt="PHP">
                                 <span>PHP</span>
                             </div>
 
                             <!-- Tools -->
-                            <h3 class="tools__branch">Tools</h3>
-                            <div class="tools__icon">
+                            <h3 class="tools__category">Herramientas</h3>
+                            <div class="tools__item">
                                 <img src="img/git-icon.webp" alt="Git">
                                 <span>Git & GitHub</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/filezilla-icon.png" alt="FileZilla">
                                 <span>FileZilla</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/wordpress-icon.png" alt="WordPress">
                                 <span>WordPress</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/docker-icon.png" alt="Docker">
                                 <span>Docker</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/n8n-icon.png" alt="n8n">
                                 <span>n8n</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/google-cloud-icon.png" alt="Google Cloud">
                                 <span>Google Cloud</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/stackblitz-icon.jpg" alt="StackBlitz">
                                 <span>StackBlitz</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/penpot-icon.png" alt="PenPot">
                                 <span>PenPot</span>
                             </div>
 
                             <!-- Database -->
-                            <h3 class="tools__branch">Database</h3>
-                            <div class="tools__icon">
+                            <h3 class="tools__category">Base de Datos</h3>
+                            <div class="tools__item">
                                 <img src="img/supabase-icon.jpg" alt="Supabase">
                                 <span>Supabase</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/qdrant-icon.png" alt="Qdrant">
                                 <span>Qdrant</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/firebase-icon.png" alt="Firebase">
                                 <span>Firebase</span>
                             </div>
 
                             <!-- Duplicate for infinite scroll effect -->
-                            <h3 class="tools__branch">Development</h3>
-                            <div class="tools__icon">
+                            <h3 class="tools__category">Development</h3>
+                            <div class="tools__item">
                                 <img src="img/html-icon.png" alt="HTML">
                                 <span>HTML</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/css-icon.png" alt="CSS">
                                 <span>CSS</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/js-icon.png" alt="JavaScript">
                                 <span>JavaScript</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/typescript-icon.png" alt="TypeScript">
                                 <span>TypeScript</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/angular-icon.png" alt="Angular">
                                 <span>Angular</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/react-icon.png" alt="React">
                                 <span>React</span>
                             </div>
-                            <div class="tools__icon">
+                            <div class="tools__item">
                                 <img src="img/php-icon.webp" alt="PHP">
                                 <span>PHP</span>
                             </div>
@@ -494,53 +530,60 @@
 
         <!-- Collaborations Section -->
         <section class="collaborations" id="clients">
-            <h2 class="collaborations__title">Recent Collaborations</h2>
+            <h2 class="collaborations__title">Colaboraciones Recientes</h2>
             <div class="collaborations__container">
                 <article class="collaborations__card">
-                    <h3 class="collaborations__subtitle">Agencies & Studios</h3>
-                    <p class="collaborations__text">Partnering with creative teams to bring high-fidelity designs to
-                        life for their clients.</p>
+                    <h3 class="collaborations__subtitle">Agencias y Estudios</h3>
+                    <p class="collaborations__text">Colaborando con equipos creativos para dar vida a diseños de alta
+                        fidelidad
+                        para sus clientes.</p>
                 </article>
                 <article class="collaborations__card">
-                    <h3 class="collaborations__subtitle">E-commerce Startups</h3>
-                    <p class="collaborations__text">Building conversion-focused interfaces for boutique stores and
-                        emerging brands.</p>
+                    <h3 class="collaborations__subtitle">Startups E-commerce</h3>
+                    <p class="collaborations__text">Construyendo interfaces enfocadas en conversión para tiendas
+                        boutique y
+                        marcas emergentes.</p>
                 </article>
                 <article class="collaborations__card">
-                    <h3 class="collaborations__subtitle">SaaS Products</h3>
-                    <p class="collaborations__text">Simplifying complex user flows for scaling software solutions.</p>
+                    <h3 class="collaborations__subtitle">Productos SaaS</h3>
+                    <p class="collaborations__text">Simplificando flujos de usuario complejos para soluciones de
+                        software escalables.</p>
                 </article>
             </div>
         </section>
 
         <!-- FAQ Section -->
         <section id="questions" class="questions">
-            <div class="window-aero">
+            <div class="window">
                 <!-- Window Title Bar -->
-                <div class="window-titlebar">
-                    <div class="window-titlebar__left">
-                        <span class="window-titlebar__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="window__titlebar">
+                    <div class="window__titlebar-left">
+                        <span class="window__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                                 <path d="M12 17h.01"></path>
                             </svg>
                         </span>
-                        <span class="window-titlebar__title">Help.exe — FAQ</span>
+                        <span class="window__title">Help.exe — FAQ</span>
                     </div>
-                    <div class="window-controls">
-                        <button class="window-btn window-btn--minimize" aria-label="Minimize">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <div class="window__controls">
+                        <button class="window__btn window__btn--minimize" aria-label="Minimize">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M5 12h14"></path>
                             </svg>
                         </button>
-                        <button class="window-btn window-btn--maximize" aria-label="Maximize">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <button class="window__btn window__btn--maximize" aria-label="Maximize">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <rect x="3" y="3" width="18" height="18" rx="2"></rect>
                             </svg>
                         </button>
-                        <button class="window-btn window-btn--close" aria-label="Close">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <button class="window__btn window__btn--close" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M18 6L6 18M6 6l12 12"></path>
                             </svg>
                         </button>
@@ -548,30 +591,35 @@
                 </div>
 
                 <!-- Window Content -->
-                <div class="window-content">
-                    <h2 class="questions__title">Frequently Asked Questions</h2>
+                <div class="window__content">
+                    <h2 class="questions__title">Preguntas Frecuentes</h2>
                     <div class="questions__group">
-                        <article class="questions__acordeon">
-                            <p class="questions__subtitle">What types of clients do you work with?</p>
-                            <p class="questions__answer questions--hidden">I specialize in small brands building their
-                                identity, e-commerce stores that need to convert, and SaaS products that must
-                                communicate complexity simply.</p>
+                        <article class="questions__item">
+                            <p class="questions__question">¿Con qué tipos de clientes trabajas?</p>
+                            <p class="questions__answer questions__answer--hidden">Me especializo en pequeñas marcas
+                                construyendo su
+                                identidad, tiendas e-commerce que necesitan convertir, y productos SaaS que deben
+                                comunicar complejidad de forma simple.</p>
                         </article>
-                        <article class="questions__acordeon">
-                            <p class="questions__subtitle">What is your design process like?</p>
-                            <p class="questions__answer questions--hidden">Discovery → Strategy → Wireframes → Visual
-                                Design → Iteration. I collaborate closely at every stage to ensure the result matches
-                                your vision.</p>
+                        <article class="questions__item">
+                            <p class="questions__question">¿Cómo es tu proceso de diseño?</p>
+                            <p class="questions__answer questions__answer--hidden">Descubrimiento → Estrategia →
+                                Wireframes → Diseño
+                                Visual → Iteración. Colaboro estrechamente en cada etapa para asegurar que el resultado
+                                coincida
+                                con tu visión.</p>
                         </article>
-                        <article class="questions__acordeon">
-                            <p class="questions__subtitle">Do you also develop the designs?</p>
-                            <p class="questions__answer questions--hidden">Yes! I bridge the gap between design and
-                                code, ensuring pixel-perfect implementation for both web and mobile experiences.</p>
+                        <article class="questions__item">
+                            <p class="questions__question">¿También desarrollas los diseños?</p>
+                            <p class="questions__answer questions__answer--hidden">¡Sí! Cierro la brecha entre diseño y
+                                código, asegurando una implementación perfecta al píxel para experiencias web y móviles.
+                            </p>
                         </article>
-                        <article class="questions__acordeon">
-                            <p class="questions__subtitle">What tools do you use?</p>
-                            <p class="questions__answer questions--hidden">Penpot/Figma for design, and modern stacks
-                                like React, Next.js, and Supabase for high-performance development.</p>
+                        <article class="questions__item">
+                            <p class="questions__question">¿Qué herramientas utilizas?</p>
+                            <p class="questions__answer questions__answer--hidden">Penpot/Figma para diseño, y stacks
+                                modernos
+                                como React, Next.js y Supabase para desarrollo de alto rendimiento.</p>
                         </article>
                     </div>
                 </div>
@@ -582,8 +630,9 @@
     <!-- Windows 7 Style Taskbar -->
     <div class="taskbar">
         <!-- Theme Toggle Button -->
-        <div class="random__button" title="Cambiar tema">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <div class="taskbar__theme-toggle" title="Cambiar tema">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
             </svg>
@@ -594,34 +643,38 @@
 
         <!-- Pinned Items -->
         <div class="taskbar__pinned">
-            <a href="#hero" class="taskbar__item active" title="Inicio">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <a href="#hero" class="taskbar__item taskbar__item--active" title="Inicio">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
                     <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                     <polyline points="9 22 9 12 15 12 15 22"></polyline>
                 </svg>
             </a>
-            <a href="#" class="taskbar__item" title="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            <a href="https://www.linkedin.com/in/lsamueljaimesa/" class="taskbar__item" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                 </svg>
             </a>
-            <a href="mailto:samueljaimesofficial@gmail.com" class="taskbar__item" title="Contacto">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
+            <a href="https://www.instagram.com/in_ven_ta_do/" class="taskbar__item" title="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
                 </svg>
             </a>
         </div>
 
         <!-- System Tray -->
         <div class="taskbar__tray">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
                 <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
                 <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
                 <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
                 <line x1="12" y1="20" x2="12.01" y2="20"></line>
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
                 <rect x="1" y="6" width="18" height="12" rx="2" ry="2"></rect>
                 <line x1="23" y1="13" x2="23" y2="11"></line>
             </svg>
