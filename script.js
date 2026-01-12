@@ -35,7 +35,7 @@ function initLoader() {
 function initHeroSelector() {
     const playerOptions = document.querySelectorAll('.hero__option');
     const heroTitle = document.querySelector('.hero__title');
-    const heroPicture = document.querySelector('.hero__mypicture');
+    const heroPicture = document.querySelector('.hero__picture');
 
     playerOptions.forEach((option) => {
         option.addEventListener('click', (e) => {
@@ -60,22 +60,26 @@ function initHeroSelector() {
 // FAQ ACCORDIONS
 // ==========================================
 function initFAQAccordions() {
-    const accordions = document.querySelectorAll('.questions__acordeon');
+    const accordions = document.querySelectorAll('.questions__item');
 
     accordions.forEach((accordion) => {
         accordion.addEventListener('click', () => {
             const answer = accordion.querySelector('.questions__answer');
-            const isOpen = !answer.classList.contains('questions--hidden');
+            if (!answer) return;
+
+            const isOpen = !answer.classList.contains('questions__answer--hidden');
 
             // Close all other accordions
             accordions.forEach(acc => {
                 const ans = acc.querySelector('.questions__answer');
-                ans.classList.add('questions--hidden');
+                if (ans) {
+                    ans.classList.add('questions__answer--hidden');
+                }
             });
 
             // Toggle current accordion
             if (!isOpen) {
-                answer.classList.remove('questions--hidden');
+                answer.classList.remove('questions__answer--hidden');
             }
         });
     });
@@ -86,6 +90,9 @@ function initFAQAccordions() {
 // ==========================================
 function initLockedSections() {
     const lockedSections = document.querySelectorAll('.locked');
+
+    // Exit early if no locked sections exist
+    if (lockedSections.length === 0) return;
 
     lockedSections.forEach((lockedElement) => {
         let timer;
@@ -129,20 +136,20 @@ function initMobileMenu() {
 
     if (burger && menu) {
         burger.addEventListener('click', () => {
-            menu.classList.toggle('collapsed');
+            menu.classList.toggle('header__menu--collapsed');
         });
 
         // Close menu when clicking a link
         links.forEach((link) => {
             link.addEventListener('click', () => {
-                menu.classList.add('collapsed');
+                menu.classList.add('header__menu--collapsed');
             });
         });
 
         // Close menu on escape key
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && !menu.classList.contains('collapsed')) {
-                menu.classList.add('collapsed');
+            if (e.key === 'Escape' && !menu.classList.contains('header__menu--collapsed')) {
+                menu.classList.add('header__menu--collapsed');
             }
         });
     }
@@ -180,17 +187,18 @@ function initTaskbarClock() {
 // THEME TOGGLE
 // ==========================================
 function initThemeToggle() {
-    const toggleButton = document.querySelector('.random__button');
-    const body = document.querySelector('.darkmode');
+    const toggleButton = document.querySelector('.taskbar__theme-toggle');
+    const body = document.getElementById('darkmode');
 
     if (toggleButton && body) {
         toggleButton.addEventListener('click', () => {
-            body.classList.toggle('darkmode');
+            body.classList.toggle('body--darkmode');
 
             // Add rotation animation
             const svg = toggleButton.querySelector('svg');
             if (svg) {
                 svg.style.transform = 'rotate(360deg)';
+                svg.style.transition = 'transform 500ms ease';
                 setTimeout(() => {
                     svg.style.transform = 'rotate(0deg)';
                 }, 500);
