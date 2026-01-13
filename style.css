@@ -450,20 +450,13 @@ section {
     display: inline-flex;
     align-items: center;
     padding: 4px 0.75rem;
-    background: var(--accent-subtle);
     color: var(--accent-primary);
-    border: 1px solid rgba(221, 146, 45, 0.2);
-    border-radius: 999px;
-    font-size: clamp(0.6875rem, 0.625rem + 0.25vw, 0.75rem);
+    font-size: clamp(0.6rem, 1dvw, 0.7rem);
     font-weight: 500;
     letter-spacing: 0.02em;
     transition: all var(--transition-fast);
 }
 
-.project__tag:hover {
-    background: rgba(221, 146, 45, 0.2);
-    border-color: rgba(221, 146, 45, 0.4);
-}
 
 /* ======================== */
 /* HEADER / NAVIGATION */
@@ -610,7 +603,7 @@ section {
 }
 
 .hero__title {
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-size: clamp(1.5rem, 4dvw, 2.4rem);
     font-weight: 700;
     background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-primary) 100%);
     -webkit-background-clip: text;
@@ -859,11 +852,11 @@ section {
 }
 
 .project__footer {
+    height: 100%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
-    margin-top: auto;
+    justify-content: space-between;
 }
 
 .project__role {
@@ -928,8 +921,14 @@ section {
 }
 
 .tools__carousel {
-    overflow: hidden;
+    overflow-x: scroll;
     position: relative;
+}
+
+.tools__carousel::-webkit-scrollbar-thumb {
+    background-color: var(--accent-secondary);
+    animation: pulse 2s linear infinite 2s;
+    border-radius: 2rem;
 }
 
 .tools__list {
@@ -937,18 +936,7 @@ section {
     padding: 2rem;
     gap: 1.5rem;
     align-items: center;
-    animation: scrollTools 60s linear infinite;
     width: max-content;
-}
-
-@keyframes scrollTools {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
 }
 
 .tools__category {
@@ -1112,9 +1100,6 @@ section {
     text-align: center;
 }
 
-.collaborations__incoming {
-    display: none;
-}
 
 /* ======================== */
 /* WINDOWS 7 TASKBAR */
@@ -1399,7 +1384,6 @@ section {
     }
 
     .hero__title {
-        font-size: clamp(1.75rem, 1.5rem + 1vw, 2rem);
         text-align: center;
     }
 
