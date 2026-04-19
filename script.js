@@ -1,7 +1,3 @@
-// ==========================================
-// Portfolio Script - Windows 7 Aero Edition
-// ==========================================
-
 // Initialize on DOM ready
 document.addEventListener("DOMContentLoaded", () => {
   initLoader();
@@ -42,16 +38,6 @@ function initHeroSelector() {
       // Update main image and title
       heroTitle.textContent = e.target.alt;
       heroPicture.src = e.target.src;
-
-      // Add selection effect
-      playerOptions.forEach((opt) => (opt.style.opacity = "0.6"));
-      e.target.style.opacity = "1";
-
-      // Add a subtle animation
-      heroPicture.style.transform = "scale(0.95)";
-      setTimeout(() => {
-        heroPicture.style.transform = "scale(1)";
-      }, 150);
     });
   });
 }
@@ -196,16 +182,6 @@ function initThemeToggle() {
   if (toggleButton && body) {
     toggleButton.addEventListener("click", () => {
       body.classList.toggle("body--darkmode");
-
-      // Add rotation animation
-      const svg = toggleButton.querySelector("svg");
-      if (svg) {
-        svg.style.transform = "rotate(360deg)";
-        svg.style.transition = "transform 500ms ease";
-        setTimeout(() => {
-          svg.style.transform = "rotate(0deg)";
-        }, 500);
-      }
     });
   }
 }
@@ -255,64 +231,42 @@ function initSmoothScrolling() {
 // WINDOW EFFECTS
 // ==========================================
 function initWindowEffects() {
-  const windows = document.querySelectorAll(".window-aero");
-
-  // Intersection Observer for window animations
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = "1";
-          entry.target.style.transform = "translateY(0)";
-        }
-      });
-    },
-    {
-      threshold: 0.1,
-      rootMargin: "0px 0px -50px 0px",
-    }
-  );
-
-  windows.forEach((win) => {
-    win.style.opacity = "0";
-    win.style.transform = "translateY(20px)";
-    win.style.transition = "opacity 0.6s ease, transform 0.6s ease";
-    observer.observe(win);
-  });
-
   // Window control button effects
-  const closeButtons = document.querySelectorAll(".window-btn--close");
+  const closeButtons = document.querySelectorAll(".window__btn--close");
   closeButtons.forEach((btn) => {
     btn.addEventListener("click", (e) => {
-      const window = e.target.closest(".window-aero");
-      if (window) {
-        window.style.transform = "scale(0.95)";
-        window.style.opacity = "0.7";
-        setTimeout(() => {
-          window.style.transform = "";
-          window.style.opacity = "";
-        }, 300);
+      const windowparent = e.currentTarget.closest(".window");
+      if (windowparent) {
+        windowparent.remove();
       }
     });
   });
 
   // Minimize button effect
-  const minimizeButtons = document.querySelectorAll(".window-btn--minimize");
+  const minimizeButtons = document.querySelectorAll(".window__btn--minimize");
   minimizeButtons.forEach((btn) => {
     btn.addEventListener("click", (e) => {
-      const window = e.target.closest(".window-aero");
-      if (window) {
-        window.style.transform = "translateY(10px)";
-        setTimeout(() => {
-          window.style.transform = "";
-        }, 200);
+      const windowcontent = e.currentTarget.closest(".window").children[1];
+      if (windowcontent) {
+        windowcontent.classList.add("minimize");
       }
     });
   });
 }
 
+// Maximize button effect
+const maximizeButtons = document.querySelectorAll(".window__btn--maximize");
+maximizeButtons.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    const windowcontent = e.currentTarget.closest(".window").children[1];
+    if (windowcontent) {
+      windowcontent.classList.remove("minimize");
+    }
+  });
+});
+
 // ==========================================
-// PARALLAX EFFECT FOR HERO (Optional)
+// PARALLAX EFFECT FOR HERO
 // ==========================================
 window.addEventListener("scroll", () => {
   const scrolled = window.pageYOffset;
