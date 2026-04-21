@@ -190,19 +190,6 @@ function initThemeToggle() {
 // SMOOTH SCROLLING
 // ==========================================
 function initSmoothScrolling() {
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute("href"));
-      if (target) {
-        target.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
-    });
-  });
-
   // Update active taskbar item on scroll
   const sections = document.querySelectorAll("section[id]");
   const taskbarItems = document.querySelectorAll(".taskbar__item");
