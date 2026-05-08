@@ -786,26 +786,28 @@ section {
     color: var(--text-primary);
     white-space: nowrap;
 }
-
+:is(.project__preview,.project__preview img, .project__footer){
+    height: 100%;
+    width: 100%;
+}
 .project__preview {
     position: absolute;
     background: var(--bg-tertiary);
-    width: 100%;
 }
 
 .project__preview img {
     transform-origin: center;
+    object-fit: cover;
 }
 
 .project__footer {
     padding: 1rem;
     background-color: var(--bg-elevated);
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     transform-origin: bottom center;
-    transform: translateY(88%);
+    transform: translateY(90%);
     transition: all 1s;
 }
 
